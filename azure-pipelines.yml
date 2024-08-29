@@ -18,7 +18,7 @@ variables:
   environmentName: 'node-okta'
 
 pool:
-  name: 'Default'
+ name: 'Default'
   # Agent VM image name
   # vmImageName: 'ubuntu-latest'
 
@@ -28,8 +28,8 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    pool:
-      vmImage: $(vmImageName)
+    # pool:
+    #   vmImage: $(vmImageName)
 
     steps:
     - task: NodeTool@0
@@ -63,8 +63,8 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     environment: $(environmentName)
-    pool:
-      vmImage: $(vmImageName)
+    # pool:
+    #   vmImage: $(vmImageName)
     strategy:
       runOnce:
         deploy:
