@@ -18,7 +18,7 @@ variables:
   environmentName: 'node-okta'
 
 pool:
-  name: 'Default'
+ name: 'Default'
   # Agent VM image name
   # vmImageName: 'ubuntu-latest'
 
