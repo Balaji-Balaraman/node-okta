@@ -10,7 +10,6 @@ steps:
     versionSource: 'spec'
     versionSpec: '10.x'
     checkLatest: true
-    force32bit: true
   displayName: 'Install Node.js'
 
 - script: |
