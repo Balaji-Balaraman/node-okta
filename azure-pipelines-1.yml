@@ -9,11 +9,11 @@ steps:
   inputs:
     versionSource: 'spec'
     versionSpec: '10.x'
-    checkLatest: true
   displayName: 'Install Node.js'
 
 - script: |
     cd 01-login
+    npm cache clean --force
     npm install
     npm run build
   displayName: 'npm install and build'
