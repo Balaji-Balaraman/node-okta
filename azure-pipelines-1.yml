@@ -15,5 +15,5 @@ steps:
     cd 01-login
     npm cache clean --force
     npm install
-    npm run build
+    npm start
   displayName: 'npm install and build'
